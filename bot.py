@@ -2,7 +2,7 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import os
 
-TOKEN = "8590144654:AAGemeuT1E3R2JROP5o-hggxWnDb24hO6Ro"
+TOKEN = os.getenv("BOT_TOKEN")
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -84,3 +84,4 @@ def complete_task(call):
 
 print("Бот запущен...")
 bot.infinity_polling()
+
