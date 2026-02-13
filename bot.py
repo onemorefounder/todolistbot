@@ -32,7 +32,7 @@ def remove_task(message_id):
 # --- Обработка команды /start ---
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id, "Просто отправляй сюда свои дела")
+    bot.send_message(message.chat.id, "Список дел:")
 
 
 # --- Обработка текстовых сообщений (создание задачи) ---
@@ -84,4 +84,5 @@ def complete_task(call):
 
 print("Бот запущен...")
 bot.infinity_polling()
+
 
